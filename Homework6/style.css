@@ -21,6 +21,26 @@
 
 }
 
+.container { 
+    width: 100%;
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.headrink{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-head{    
+display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 33px;
+}
+
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -31,6 +51,11 @@
     align-items: center;
     justify-content: start;
     gap: 41px;
+}
+
+.align_promo{
+    display: flex;
+
 }
 
 .promo-content {
@@ -235,4 +260,112 @@
 .button:hover {
     background: #F26376;
     color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .center {
+       padding-left: calc(50% - 160px);
+       padding-right: calc(50% - 160px);
+    }
+ 
+    .header {
+       gap: 0px;
+       padding: 20px 15px;
+    }
+    
+    .headrink{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-head {
+       padding-left: 8px;
+    }
+
+    .top-photo,
+    .user-item,
+    .shop-item {
+      display: none;
+   }
+   
+   .container{
+        width: 100%;
+   }
+
+   .right-head {
+    gap: 0px;
+}
+
+   .promo__info{
+    margin: 148px 28px;
+    padding-left: 15px;
+   }
+
+   .promo__img{
+    width: 0%;
+   }
+
+   .promo-content{
+    padding-left:  0px;
+   }
+
+   .title{
+    font-size: 38px;
+   }
+
+   .title-text{
+    font-size: 20px;
+   }
+
+   .text-selection{
+    font-size: 20px;
+   }
+
+.offers{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'item1'
+        'item2'
+        'item3'
+        'item_big';
+}
+
+.offer-img{
+    width: 100%;
+}
+
+.img-text {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+
+.center_big{
+    height: 111px;
+    background-image: url(img/item_big.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 219%;
+}
+
+.img-text_big{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 0px;
+}
+
+.product-wrap {
+    grid-template-columns: repeat(1, 319px);
+}
+
+.image-products{
+    width: 100%;
+}
+
+.button {
+margin-bottom: 40px
+}
+
+
+
 }
